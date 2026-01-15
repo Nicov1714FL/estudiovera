@@ -4,44 +4,45 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal text-cream py-16">
+    <footer className="bg-[#2C2416] text-[#F5F1ED] py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <Scale className="w-8 h-8 text-gold-light" />
+              <Scale className="w-8 h-8 text-[#D4C4B0]" />
               <div>
                 <div className="font-serif text-xl font-medium">
                   Vera Guras Florencia
                 </div>
-                <div className="text-xs tracking-[0.2em] text-cream/60">
-                  Y ASOCIADOS
+                <div className="text-xs tracking-[0.2em] text-[#D4C4B0]">
+                  ABOGADA UBA
                 </div>
               </div>
             </div>
-            <p className="text-cream/60 leading-relaxed">
-              Asesoramiento jurídico profesional en Derecho Civil y Comercial.
-              Más de 15 años de experiencia al servicio de nuestros clientes.
+            <p className="text-[#D4C4B0] leading-relaxed">
+              Asesoramiento jurídico estratégico en Derecho Civil, Comercial e Inmobiliario. 
+              Neuquén, Argentina.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-medium mb-6 text-gold-light">
+            <h4 className="font-serif text-lg font-medium mb-6 text-[#D4C4B0]">
               Enlaces Rápidos
             </h4>
             <ul className="space-y-3">
               {[
                 { href: "#inicio", label: "Inicio" },
-                { href: "#servicios", label: "Servicios" },
-                { href: "#nosotros", label: "Nosotros" },
+                { href: "#diferencial", label: "¿Por qué elegirme?" },
+                { href: "#servicios", label: "Áreas de Práctica" },
+                { href: "#formacion", label: "Formación" },
                 { href: "#contacto", label: "Contacto" },
               ].map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-cream/60 hover:text-gold-light transition-colors duration-300"
+                    className="text-[#D4C4B0]/80 hover:text-[#D4C4B0] transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -52,35 +53,35 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-serif text-lg font-medium mb-6 text-gold-light">
-              Áreas de Práctica
+            <h4 className="font-serif text-lg font-medium mb-6 text-[#D4C4B0]">
+              Áreas de Especialización
             </h4>
             <ul className="space-y-3">
               {[
-                "Derecho Civil",
-                "Derecho Comercial",
-                "Contratos",
-                "Mediación",
-                "Consultoría Legal",
+                "Derecho Civil y Comercial",
+                "Derecho de Familia",
+                "Sucesiones",
+                "Derecho Inmobiliario",
+                "Derecho del Consumidor",
+                "Derecho Laboral",
               ].map((service) => (
                 <li key={service}>
-                  <span className="text-cream/60">{service}</span>
+                  <span className="text-[#D4C4B0]/80">{service}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-cream/40 text-sm">
-            © {currentYear} Vera Guras Florencia y Asociados. Todos los derechos
-            reservados.
+        <div className="border-t border-[#D4C4B0]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[#D4C4B0]/60 text-sm">
+            © {currentYear} Vera Guras Florencia. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6 text-sm text-cream/40">
-            <a href="#" className="hover:text-gold-light transition-colors">
+          <div className="flex gap-6 text-sm text-[#D4C4B0]/60">
+            <a href="#" className="hover:text-[#D4C4B0] transition-colors">
               Política de Privacidad
             </a>
-            <a href="#" className="hover:text-gold-light transition-colors">
+            <a href="#" className="hover:text-[#D4C4B0] transition-colors">
               Términos de Uso
             </a>
           </div>
