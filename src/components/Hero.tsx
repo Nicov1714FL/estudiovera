@@ -12,11 +12,11 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Oficina de abogados profesional"
+          alt="Asesoramiento jurídico profesional"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-overlay" />
-        <div className="absolute inset-0 bg-charcoal/50" />
+        {/* Overlay oscuro para mejor contraste */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2C2416]/70 via-[#2C2416]/60 to-[#2C2416]/80" />
       </div>
 
       {/* Content */}
@@ -25,34 +25,42 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-5xl mx-auto"
         >
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-block text-gold-light text-sm md:text-base tracking-[0.4em] uppercase mb-6"
+            className="inline-block text-[#D4C4B0] text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium"
           >
-            Asesoramiento Jurídico
+            Asesoramiento Jurídico Estratégico
           </motion.span>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium text-cream leading-tight mb-6"
+            className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium text-white leading-tight mb-4"
           >
-            Vera Guras Florencia
-            <span className="block text-gold-light">y Asociados</span>
+            Estudio Vera Guras
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="text-lg md:text-2xl text-[#D4C4B0] max-w-4xl mx-auto mb-10 leading-relaxed font-light"
           >
             Abogada UBA – Derecho Civil, Comercial e Inmobiliario | Asesoramiento legal profesional en Neuquén
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed"
+          >
+            Analizo tu caso, investigo, desarrollo estrategias personalizadas y te acompaño en la toma de decisiones informadas. Juntos construimos la mejor solución.
           </motion.p>
 
           <motion.div
@@ -63,15 +71,15 @@ const Hero = () => {
           >
             <a
               href="#contacto"
-              className="px-8 py-4 bg-primary text-primary-foreground font-medium tracking-wide hover:bg-accent transition-all duration-300 hover:shadow-lg"
+              className="px-10 py-4 bg-[#8B7355] text-white font-medium tracking-wide hover:bg-[#6B5745] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Agendar Consulta
+              Contactar Ahora
             </a>
             <a
               href="#servicios"
-              className="px-8 py-4 border border-cream/40 text-cream font-medium tracking-wide hover:bg-cream/10 transition-all duration-300"
+              className="px-10 py-4 border-2 border-white/80 text-white font-medium tracking-wide hover:bg-white hover:text-[#2C2416] transition-all duration-300"
             >
-              Nuestros Servicios
+              Conocer Áreas de Práctica
             </a>
           </motion.div>
         </motion.div>
@@ -88,7 +96,7 @@ const Hero = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-8 h-8 text-cream/60" />
+          <ChevronDown className="w-8 h-8 text-white/80" />
         </motion.div>
       </motion.div>
     </section>
@@ -96,4 +104,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

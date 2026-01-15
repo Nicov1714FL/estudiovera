@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoImage from "@/assets/logo-vera-guras.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,18 +30,27 @@ const Header = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg py-4"
-          : "bg-white/80 backdrop-blur-sm py-6"
+          ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
+          : "bg-white/80 backdrop-blur-sm py-4"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#inicio" className="flex flex-col">
-          <span className="font-serif text-xl md:text-2xl font-medium text-[#2C2416] tracking-wide">
-            Vera Guras Florencia
-          </span>
-          <span className="text-xs tracking-[0.25em] text-[#8B7355] uppercase">
-            Abogada UBA
-          </span>
+        <a href="#inicio" className="flex items-center gap-4">
+          <img 
+            src={logoImage} 
+            alt="Estudio Vera Guras Logo" 
+            className={`transition-all duration-300 ${
+              isScrolled ? "h-12" : "h-14"
+            }`}
+          />
+          <div className="flex flex-col">
+            <span className="font-serif text-lg md:text-xl font-medium text-[#2C2416] tracking-wide">
+              Estudio Vera Guras
+            </span>
+            <span className="text-xs tracking-[0.25em] text-[#8B7355] uppercase">
+              Abogada UBA
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
