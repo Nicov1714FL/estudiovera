@@ -52,9 +52,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
           >
-            Pasión, vocación y absoluto compromiso en brindar calidad y
-            eficiencia en la atención de los requerimientos de nuestros
-            clientes.
+            Abogada UBA – Derecho Civil, Comercial e Inmobiliario | Asesoramiento legal profesional en Neuquén
           </motion.p>
 
           <motion.div
