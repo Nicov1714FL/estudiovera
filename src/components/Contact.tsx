@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Teléfono",
-    value: "+54 299 XXX-XXXX",
+    value: "+54 299 512-7774",
   },
   {
     icon: Mail,
@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   // WhatsApp floating button
-  const whatsappNumber = "5492991234567"; // Reemplazar con tu número real
+  const whatsappNumber = "5492995127774";
   const whatsappMessage = encodeURIComponent("Hola, necesito asesoramiento legal.");
 
   return (
